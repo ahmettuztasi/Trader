@@ -22,6 +22,13 @@ class ParameterBuilder {
         self.paramDict.updateValue(msgType, forKey: "MsgType")
         return self
     }
+    ///this method get platform key and set it to paramDict
+    /// - Parameters: customerNo -> string type
+    /// - Returns: self which means Parameter builder class
+    func setCustomerNo(_ customerNo: String) -> ParameterBuilder {
+        self.paramDict.updateValue(customerNo, forKey: "CustomerNo")
+        return self
+    }
     ///this method get content type and set it to paramDict
     /// - Parameters: userName -> string type
     /// - Returns: self which means Parameter builder class

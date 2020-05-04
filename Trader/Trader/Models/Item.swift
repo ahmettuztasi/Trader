@@ -11,7 +11,7 @@ import Foundation
 // MARK: - Item
 class Item: Codable {
     let accountID, symbol: String
-    let qtyT2: Double
+    let qtyT2: Int
     let lastPx: Double
     
     enum CodingKeys: String, CodingKey {
@@ -21,7 +21,7 @@ class Item: Codable {
         case lastPx = "LastPx"
     }
     
-    init(accountID: String, symbol: String, qtyT2: Double, lastPx: Double) {
+    init(accountID: String, symbol: String, qtyT2: Int, lastPx: Double) {
         self.accountID = accountID
         self.symbol = symbol
         self.qtyT2 = qtyT2

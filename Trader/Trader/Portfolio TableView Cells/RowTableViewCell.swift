@@ -18,10 +18,16 @@ class RowTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setRow(symbol: String, amount: Double, lastPx: Double) {
+    func setRow(symbol: String, amount: Int, lastPx: Double) {
         self.symbolLabel.text = symbol
         self.amountLabel.text = String(amount)
         self.lastPxLabel.text = String(lastPx)
-        self.priceLabel.text  = String(amount * lastPx)
+        
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 4
+        formatter.minimumFractionDigits = 0
+        formatter.numberStyle = .none
+        
+        self.priceLabel.text  = formatter.string(for: (Double(amount) * lastPx))
     }
 }

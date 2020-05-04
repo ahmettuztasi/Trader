@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
                 let defaults = UserDefaults.standard
                 defaults.set(loginModel?.defaultAccount, forKey: "defaultAccount")
                 defaults.set(self.userNameTextField.text, forKey: "userName")
-                defaults.set(self.passwordTextField, forKey: "password")
+                defaults.set(self.passwordTextField.text, forKey: "password")
                 
                 // Go to Portfolio View Controller
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "PortfolioViewController") as! PortfolioViewController
@@ -58,6 +58,7 @@ extension LoginViewController {
             .setBodyParameter(parameter:
                 ParameterBuilder()
                 .setMsgType("A")
+                .setCustomerNo("0")
                 .setUsername(userName)
                 .setPassword(password)
                 .setAccountID("0")

@@ -20,7 +20,7 @@ class LastRowTableViewCell: UITableViewCell {
     func calculateGrandTotal(portfolio: PortfolioModel) {
         var grandTotal: Double = 0
         for item in portfolio.item {
-            grandTotal += item.lastPx * item.qtyT2
+            grandTotal += item.lastPx * Double(item.qtyT2)
         }
 
         self.grandTotalLabel.text = String(grandTotal)

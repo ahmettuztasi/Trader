@@ -43,10 +43,6 @@ class PortfolioViewController: UITableViewController {
         
         // Get Portfolio
         getPortfolio()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        // Start activity indicator
         showActivityIndicator()
     }
 }
@@ -118,6 +114,7 @@ extension PortfolioViewController {
             .setBodyParameter(parameter:
                 ParameterBuilder()
                     .setMsgType("AN")
+                    .setCustomerNo("0")
                     .setUsername(defaults.string(forKey: "userName") ?? "")
                     .setPassword(defaults.string(forKey: "password") ?? "")
                     .setAccountID(defaults.string(forKey: "defaultAccount") ?? "")

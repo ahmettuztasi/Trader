@@ -25,7 +25,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42.487.720" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-Qh-c8M">
-                        <rect key="frame" x="170" y="11.5" width="87" height="21"/>
+                        <rect key="frame" x="160" y="11.5" width="87" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                     <constraint firstItem="Olu-Qh-c8M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R7g-tX-MZh"/>
                     <constraint firstAttribute="trailing" secondItem="afS-DF-wFQ" secondAttribute="trailing" id="aEZ-hP-vxb"/>
                     <constraint firstAttribute="bottom" secondItem="llS-c8-X7c" secondAttribute="bottom" id="ccF-76-Cyi"/>
-                    <constraint firstItem="Olu-Qh-c8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="170" id="ceC-lK-WfL"/>
+                    <constraint firstItem="Olu-Qh-c8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="160" id="ceC-lK-WfL"/>
                     <constraint firstItem="zoa-s0-kbV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="d0b-dd-hy9"/>
                     <constraint firstItem="llS-c8-X7c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dbd-sk-dn6"/>
                     <constraint firstAttribute="bottom" secondItem="afS-DF-wFQ" secondAttribute="bottom" id="fyv-wP-9rh"/>
